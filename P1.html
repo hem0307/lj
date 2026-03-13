@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let obj={name:"abc",age:19,present:true}
+        console.log(obj['name'])
+        console.log(obj.age)
+        console.log(obj.present)
+        console.log(obj)
+
+
+        let obj2={emp:['abc','pqr','xyz']}
+        console.log(obj2.emp[2])
+
+
+        let obj3={emp:{name:'abc',age:19}}
+        console.log(obj3.emp.age)
+
+
+        let a='{"name":"abc"}'
+        console.log(JSON.parse(a).name)
+
+
+        let a1={name:"pqr"}
+        let b=JSON.stringify(a1)
+        console.log(a1.name)
+        console.log(b.name)
+
+        let a2={name:"pqr",age:22}
+        let key="age"
+        a2[key]=25
+        console.log(a2)
+
+        a2.age=30
+        console.log(a2)
+
+        a2.present=true
+        console.log(a2)
+
+        const user={name:"abc",age:28,course:["FSD-1","DE","FSD-2"],add:["T1","T2",{T3:"give again"}]}
+        console.log(user.name[0])
+        console.log(user.course[2])
+        console.log(user.add[2].T3)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
