@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function mydisplay(sum)
+        {
+            document.getElementById("demo").innerHTML="<b>"+sum+"</b>"
+        }
+        function myCall(n1,n2,mycallback)
+        {
+            sum=n1+n2
+            mycallback(sum)
+
+        }
+        myCall(13,15,mydisplay)
+    </script>
+</body>
+</html>
